@@ -16,7 +16,8 @@ export default function GlobalState({ children }) {
     event.preventDefault();
     try {
       const res = await fetch(
-        `https://forkify-api.herokuapp.com/api/v2/recipes?search=${searchParam}`
+        // `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${searchParam}&apiKey=4514bf89c1ae4d3792c5430063fab343`
+         `https://forkify-api.herokuapp.com/api/v2/recipes?search=${searchParam}`
       );
 
       const data = await res.json();
